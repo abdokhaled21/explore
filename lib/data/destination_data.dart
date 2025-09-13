@@ -1,0 +1,291 @@
+import '../models/destination.dart';
+
+class DestinationData {
+  static const List<Destination> popularDestinations = [
+    Destination(
+      name: 'Santorini',
+      country: 'Greece',
+      imageUrl: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff',
+      rating: 4.8,
+      category: 'Popular',
+    ),
+    Destination(
+      name: 'Kyoto',
+      country: 'Japan',
+      imageUrl: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e',
+      rating: 4.7,
+      category: 'Popular',
+    ),
+    Destination(
+      name: 'Paris',
+      country: 'France',
+      imageUrl: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34',
+      rating: 4.6,
+      category: 'Popular',
+    ),
+    Destination(
+      name: 'Bali',
+      country: 'Indonesia',
+      imageUrl: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4',
+      rating: 4.7,
+      category: 'Popular',
+    ),
+    Destination(
+      name: 'New York',
+      country: 'USA',
+      imageUrl: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9',
+      rating: 4.5,
+      category: 'Popular',
+    ),
+    Destination(
+      name: 'Machu Picchu',
+      country: 'Peru',
+      imageUrl: 'https://images.unsplash.com/photo-1526392060635-9d6019884377',
+      rating: 4.9,
+      category: 'Popular',
+    ),
+  ];
+
+  static const List<Destination> beachDestinations = [
+    Destination(
+      name: 'Bali',
+      country: 'Indonesia',
+      imageUrl: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4',
+      rating: 4.7,
+      category: 'Beach',
+    ),
+    Destination(
+      name: 'Maldives',
+      country: 'Maldives',
+      imageUrl: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8',
+      rating: 4.9,
+      category: 'Beach',
+    ),
+    Destination(
+      name: 'Maya Bay',
+      country: 'Thailand',
+      imageUrl: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a',
+      rating: 4.6,
+      category: 'Beach',
+    ),
+    Destination(
+      name: 'Copacabana',
+      country: 'Brazil',
+      imageUrl: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325',
+      rating: 4.5,
+      category: 'Beach',
+    ),
+    Destination(
+      name: 'Whitehaven',
+      country: 'Australia',
+      imageUrl: 'https://images.unsplash.com/photo-1589394815804-964ed0be2eb5',
+      rating: 4.9,
+      category: 'Beach',
+    ),
+  ];
+
+  static const List<Destination> mountainDestinations = [
+    Destination(
+      name: 'Machu Picchu',
+      country: 'Peru',
+      imageUrl: 'https://images.unsplash.com/photo-1526392060635-9d6019884377',
+      rating: 4.9,
+      category: 'Mountains',
+    ),
+    Destination(
+      name: 'Swiss Alps',
+      country: 'Switzerland',
+      imageUrl: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7',
+      rating: 4.9,
+      category: 'Mountains',
+    ),
+    Destination(
+      name: 'Patagonia',
+      country: 'Argentina/Chile',
+      imageUrl: 'https://images.unsplash.com/photo-1531794594762-91d6d4d4908e',
+      rating: 4.8,
+      category: 'Mountains',
+    ),
+    Destination(
+      name: 'Banff',
+      country: 'Canada',
+      imageUrl: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce',
+      rating: 4.7,
+      category: 'Mountains',
+    ),
+    Destination(
+      name: 'Himalayas',
+      country: 'Nepal',
+      imageUrl: 'https://images.unsplash.com/photo-1585016495481-91613a3ab1bc',
+      rating: 4.9,
+      category: 'Mountains',
+    ),
+  ];
+
+  static const List<Destination> cityDestinations = [
+    Destination(
+      name: 'Kyoto',
+      country: 'Japan',
+      imageUrl: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e',
+      rating: 4.7,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Paris',
+      country: 'France',
+      imageUrl: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34',
+      rating: 4.6,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'New York',
+      country: 'USA',
+      imageUrl: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9',
+      rating: 4.5,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Copacabana',
+      country: 'Brazil',
+      imageUrl: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325',
+      rating: 4.5,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Tokyo',
+      country: 'Japan',
+      imageUrl: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf',
+      rating: 4.7,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Barcelona',
+      country: 'Spain',
+      imageUrl: 'https://images.unsplash.com/photo-1583422409516-2895a77efded',
+      rating: 4.6,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Singapore',
+      country: 'Singapore',
+      imageUrl: 'https://images.unsplash.com/photo-1565967511849-76a60a516170',
+      rating: 4.8,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Istanbul',
+      country: 'Turkey',
+      imageUrl: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200',
+      rating: 4.5,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Varanasi',
+      country: 'India',
+      imageUrl: 'https://images.unsplash.com/photo-1561361058-c24e02269781',
+      rating: 4.5,
+      category: 'Cities',
+    ),
+    Destination(
+      name: 'Marrakech',
+      country: 'Morocco',
+      imageUrl: 'https://images.unsplash.com/photo-1597212720418-203d343ec760',
+      rating: 4.6,
+      category: 'Cities',
+    ),
+  ];
+
+  static const List<Destination> culturalDestinations = [
+    Destination(
+      name: 'Santorini',
+      country: 'Greece',
+      imageUrl: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff',
+      rating: 4.8,
+      category: 'Popular',
+    ),
+    Destination(
+      name: 'Kyoto',
+      country: 'Japan',
+      imageUrl: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e',
+      rating: 4.7,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Paris',
+      country: 'France',
+      imageUrl: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34',
+      rating: 4.6,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Bali',
+      country: 'Indonesia',
+      imageUrl: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4',
+      rating: 4.7,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Machu Picchu',
+      country: 'Peru',
+      imageUrl: 'https://images.unsplash.com/photo-1526392060635-9d6019884377',
+      rating: 4.9,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Himalayas',
+      country: 'Nepal',
+      imageUrl: 'https://images.unsplash.com/photo-1585016495481-91613a3ab1bc',
+      rating: 4.9,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Tokyo',
+      country: 'Japan',
+      imageUrl: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf',
+      rating: 4.7,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Barcelona',
+      country: 'Spain',
+      imageUrl: 'https://images.unsplash.com/photo-1583422409516-2895a77efded',
+      rating: 4.6,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Istanbul',
+      country: 'Turkey',
+      imageUrl: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200',
+      rating: 4.5,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Petra',
+      country: 'Jordan',
+      imageUrl: 'https://images.unsplash.com/photo-1579606192289-90249caef78b',
+      rating: 4.8,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Varanasi',
+      country: 'India',
+      imageUrl: 'https://images.unsplash.com/photo-1561361058-c24e02269781',
+      rating: 4.5,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Marrakech',
+      country: 'Morocco',
+      imageUrl: 'https://images.unsplash.com/photo-1597212720418-203d343ec760',
+      rating: 4.6,
+      category: 'Cultural',
+    ),
+    Destination(
+      name: 'Angkor Wat',
+      country: 'Cambodia',
+      imageUrl: 'https://images.unsplash.com/photo-1605756530521-02c83e74a1c7',
+      rating: 4.9,
+      category: 'Cultural',
+    ),
+  ];
+}
